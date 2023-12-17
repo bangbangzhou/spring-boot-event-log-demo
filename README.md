@@ -5,7 +5,7 @@
 今日内容介绍，大约花费9分钟
 
 ![](https://files.mdnice.com/user/7954/4cb18c3d-9331-477a-b549-a088dd98b9ed.png)
-
+![](https://files.mdnice.com/user/7954/d00a0d46-a4f6-4df1-b7dd-6ed57747a673.png)
 
 **代码地址**:
 ```
@@ -481,3 +481,5 @@ public class EventListenerApplication {
 ```
 https://github.com/bangbangzhou/spring-boot-event-log-demo.git
 ```
+
+![](https://files.mdnice.com/user/7954/d00a0d46-a4f6-4df1-b7dd-6ed57747a673.png)
