@@ -1,2 +1,11 @@
 server:
   port: 8890
+
+
+logging:
+  file:
+    path: /var/logs
+  level:
+    root: info
+  #在Spring Boot项目中默认加载类路径下的logback-spring.xml文件
+  config: classpath:logback-spring.xml

@@ -125,8 +125,8 @@ public class LogAspect {
         applicationContext.publishEvent(event);
 
         long id = Thread.currentThread().getId();
-        System.out.println("发布事件,线程id：" + id);
-
+//        System.out.println("发布事件,线程id：" + id);
+        log.info("info Result: {}", JSON.toJSONString(optLogDTO));
 
         return result;
     }
@@ -169,14 +169,15 @@ public class LogAspect {
                 .setType("2")
                 .setException(getStackTrace(e));
         // 发布事件
-        log.info("Error Result: {}", optLogDTO);
+        log.error("Error Result: {}",  JSON.toJSONString(optLogDTO));
         ApplicationEvent event = new SysLogEvent(optLogDTO);
+
 
         //发布事件
         applicationContext.publishEvent(event);
 
         long id = Thread.currentThread().getId();
-        System.out.println("发布事件,线程id：" + id);
+//        System.out.println("发布事件,线程id：" + id);
     }
 
     private Method resolveMethod(ProceedingJoinPoint point) {

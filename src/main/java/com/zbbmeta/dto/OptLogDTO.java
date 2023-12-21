@@ -2,6 +2,7 @@ package com.zbbmeta.dto;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
@@ -12,6 +13,7 @@ import java.util.Date;
  * @author springboot葵花宝典
  * @description: TODO
  */
+@ToString
 @Data
 @Accessors(chain = true)
 public class OptLogDTO implements Serializable {
